@@ -12,6 +12,7 @@ import Register from './pages/Register';
 import Settings from './pages/Settings';
 import Admin from './pages/Admin';
 import Savings from './pages/Savings';
+import Landing from './pages/Landing';
 
 function App() {
   const { isAuthenticated, initializeStore } = useStore();
@@ -25,9 +26,10 @@ function App() {
       <div className="app-container">
         <div className="content-area" style={{ paddingBottom: '20px' }}>
           <Routes>
+            <Route path="/" element={<Landing />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            <Route path="*" element={<Navigate to="/login" replace />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </div>
       </div>
