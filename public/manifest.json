@@ -1,0 +1,17 @@
+{
+  "name": "Dompet Kesayangan",
+  "short_name": "Dompetku",
+  "description": "Aplikasi pencatat keuangan buat yang tersayang",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#3f2d20",
+  "theme_color": "#3f2d20",
+  "icons": [
+    {
+      "src": "/WhatsApp Image 2026-04-21 at 02.10.31.jpeg",
+      "sizes": "192x192 512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
