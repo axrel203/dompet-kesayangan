@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useStore } from '../store/useStore';
 import { Wallet } from 'lucide-react';
+import Logo from '../components/Logo';
 
 const Register = () => {
   const [name, setName] = useState('');
@@ -28,8 +29,8 @@ const Register = () => {
         
         <div className="card">
           <div style={{ textAlign: 'center', marginBottom: '24px' }}>
-            <div style={{ width: '64px', height: '64px', backgroundColor: 'var(--color-primary)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px', color: 'var(--color-accent)' }}>
-              <Wallet size={32} />
+            <div style={{ marginBottom: '16px' }}>
+              <Logo size={64} iconSize={32} />
             </div>
             <h2 style={{ fontSize: '20px', fontWeight: '600' }}>Buat Akun Baru</h2>
           </div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useStore } from '../store/useStore';
 import { Wallet } from 'lucide-react';
+import Logo from '../components/Logo';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -26,8 +27,8 @@ const Login = () => {
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', padding: '24px', backgroundColor: 'var(--color-bg)', margin: '-20px' }}>
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
         <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-          <div style={{ width: '80px', height: '80px', backgroundColor: 'var(--color-primary)', borderRadius: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 24px', color: 'var(--color-accent)' }}>
-            <Wallet size={40} />
+          <div style={{ marginBottom: '24px' }}>
+            <Logo size={80} iconSize={40} />
           </div>
           <h1 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '8px' }}>Lounge Capital</h1>
           <p className="text-muted">Aplikasi Keuangan Pribadi</p>
