@@ -42,11 +42,15 @@ const Landing = () => {
             fontWeight: '700', 
             lineHeight: '1.2',
             marginBottom: '16px',
-            background: 'linear-gradient(to bottom, var(--color-primary), var(--color-accent))',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent'
+            color: 'var(--color-primary)'
           }}>
-            halo sayangkuu😚
+            <span style={{
+              background: 'linear-gradient(to bottom, var(--color-primary), var(--color-accent))',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent'
+            }}>
+              halo sayangkuu
+            </span> 😚
           </h1>
           <p style={{ 
             fontSize: '18px', 
