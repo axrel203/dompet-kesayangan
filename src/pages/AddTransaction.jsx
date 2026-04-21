@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useStore } from '../store/useStore';
-import { X, Utensils, ShoppingBag, Car, Film, Home, HeartPulse, BookOpen, MoreHorizontal, Wallet, Coffee } from 'lucide-react';
+import { X, Utensils, ShoppingBag, Car, Film, Home, HeartPulse, BookOpen, MoreHorizontal, Wallet, Coffee, Coins } from 'lucide-react';
 import { formatCurrency } from '../utils/format';
 
 const ICON_MAP = {
@@ -14,7 +14,8 @@ const ICON_MAP = {
   HeartPulse: <HeartPulse size={24} />,
   BookOpen: <BookOpen size={24} />,
   MoreHorizontal: <MoreHorizontal size={24} />,
-  Wallet: <Wallet size={24} />
+  Wallet: <Wallet size={24} />,
+  Coins: <Coins size={24} />
 };
 
 const AddTransaction = () => {

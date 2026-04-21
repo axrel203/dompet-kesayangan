@@ -14,7 +14,7 @@ export const useStore = create(
       savingsRecords: [],
       savingsConfig: { reminderDate: 5 },
       categories: [
-        { id: 'savings_out', name: 'Tabungan', icon: 'PiggyBank', type: 'expense' },
+        { id: 'savings_out', name: 'Tabungan', icon: 'Coins', type: 'expense' },
         { id: 'food', name: 'Makan', icon: 'Utensils', type: 'expense' },
         { id: 'snack', name: 'Jajan', icon: 'Coffee', type: 'expense' },
         { id: 'shopping', name: 'Belanja', icon: 'ShoppingBag', type: 'expense' },
